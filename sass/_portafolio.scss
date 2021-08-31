@@ -1,27 +1,69 @@
 .portafolio {
-  .portafolio__logo {
-    img {
-      width: 100%;
+  padding: 0 10px;
+  h2 {
+    color: #7a7a7a;
+  }
+  p {
+    line-height: 1.85714285714286;
+    font-family: "Roboto", sans-serif;
+  }
+}
+.portafolio_description {
+  padding: 0 10px;
+  h2 {
+    color: #7a7a7a;
+  }
+  p {
+    line-height: 1.85714285714286;
+    font-family: "Roboto", sans-serif;
+  }
+  button {
+    border-radius: 20px;
+    padding: 10px 15px;
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+  }
+}
+
+.portafolio {
+  .slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    ul {
+      position: absolute;
+      animation-name: exteriores;
+      animation-duration: 40s;
+      animation-iteration-count: infinite;
+      li {
+        display: table-cell;
+        img {
+          width: 300px;
+          height: 200px;
+        }
+      }
     }
   }
-  .portafolio_description {
-    padding: 0 10px;
-    h2 {
-      color: #7a7a7a;
-    }
-    p {
-      line-height: 1.85714285714286;
-      font-family: "Roboto", sans-serif;
-    }
-    button {
-      border-radius: 20px;
-      padding: 10px 15px;
-      border-color: #c4c4c4;
-      border-style: solid;
-      border-top-width: 1px;
-      border-right-width: 1px;
-      border-left-width: 1px;
-      border-bottom-width: 1px;
-    }
+}
+@keyframes exteriores {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -1000px;
+  }
+  50% {
+    left: -3000px;
+  }
+  75% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
   }
 }
