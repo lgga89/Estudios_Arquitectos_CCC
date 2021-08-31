@@ -1,0 +1,40 @@
+header {
+  .header__logo {
+    display: flex;
+    p {
+      color: #fff;
+    }
+  }
+}
+
+header {
+  background: rgb(39, 38, 38);
+  margin: 0;
+  padding: 0;
+  .nave {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      a {
+        font-size: 30px;
+        text-decoration: none;
+        font-family: "Lexend Deca", sans-serif;
+        color: #fff;
+      }
+    }
+  }
+}
+
+header {
+  .nave {
+    .li {
+      text-align: center;
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+      }
+    }
+  }
+}

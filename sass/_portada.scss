@@ -1,0 +1,31 @@
+.portada {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  video {
+    width: 100%;
+
+    display: flex;
+  }
+}
+.portada_title {
+  padding: 0 40px;
+}
+
+.portada_title {
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  padding-left: 5px;
+  .title__principal {
+    color: #edbb5f;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 2px;
+  }
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
