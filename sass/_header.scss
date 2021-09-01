@@ -2,10 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 header {
+  display: flex;
+
   .header__logo {
-    display: flex;
-    p {
-      color: #fff;
+    img {
+      width: 60px;
     }
   }
 }

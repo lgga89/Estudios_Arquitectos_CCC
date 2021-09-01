@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/video.js"></script>
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
 
             <div class="header__logo">
 
-                <p class=" header__logo--name">Arquitectura <br>Consultoria y Construccion</p>
+                <img src="images/logo.png" alt="">
             </div>
             <div class="nave">
                 <input type="checkbox" id="menu-toggle" />
@@ -85,32 +86,69 @@
             <h2>Portafolio</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptate quaerat repudiandae illo
                 temporibus ullam impedit voluptatibus.</p>
+            <div class="interior">
+                <div class="portafolio_description">
+                    <h2>Diseño de Interiores</h2>
+                    <h3>Sala - Comedor "Casa"</h3>
+                    <p><strong>Ubicación: </strong> Ilo - Perú</p>
+                    <p><strong>Area: </strong> 20m2</p>
+                    <p><strong> Cliente: </strong>Sr. Diego Garcia</p>
+                    <p><strong> Description: </strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil nemo dolorum architecto
+                        fugiat. Itaque quo perferendis officiis ratione minus illo veritatis expedita, amet odit quod
+                        eaque
+                        natus perspiciatis voluptas?</p>
+                </div>
 
-            <div class="portafolio_description">
-                <h2>Diseño de Interiores</h2>
-                <h3>Sala - Comedor "Tablon"</h3>
-                <p><strong>Ubicación: </strong> Ilo - Perú</p>
-                <p><strong>Area: </strong> 20m2</p>
-                <p><strong> Cliente: </strong>Sr. Diego Garcia</p>
-                <p><strong> Description: </strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil nemo dolorum architecto
-                    fugiat. Itaque quo perferendis officiis ratione minus illo veritatis expedita, amet odit quod eaque
-                    natus perspiciatis voluptas?</p>
             </div>
-            <div class="slider">
-                <ul>
-
-                    <li><img src="images/diseñoInteriores/tablon01.jpg" alt=""></li>
-                    <li><img src="images/diseñoInteriores/tablon02.jpg" alt=""></li>
-                    <li><img src="images/diseñoInteriores/tablon03.jpg" alt=""></li>
-                    <li><img src="images/diseñoInteriores/tablon04.jpg" alt=""></li>
-                </ul>
+            <div class="tablon">
+                <div class="portafolio_description">
+                    <h2>Diseño de Interiores</h2>
+                    <h3>Sala - Comedor "Tablon"</h3>
+                    <p><strong>Ubicación: </strong> Ilo - Perú</p>
+                    <p><strong>Area: </strong> 20m2</p>
+                    <p><strong> Cliente: </strong>Sr. Diego Garcia</p>
+                    <p><strong> Description: </strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil nemo dolorum architecto
+                        fugiat. Itaque quo perferendis officiis ratione minus illo veritatis expedita, amet odit quod
+                        eaque
+                        natus perspiciatis voluptas?</p>
+                </div>
+                <div class="ef-carousel">
+                    <!--  Each carousel on the page needs to have an unique name  -->
+                    <input type="radio" name="unique-name" id="unique-name-1" checked class="ef-carousel__state" />
+                    <input type="radio" name="unique-name" id="unique-name-2" class="ef-carousel__state" />
+                    <input type="radio" name="unique-name" id="unique-name-3" class="ef-carousel__state" />
+                    <div class="ef-carousel__items">
+                        <img src="images/diseñoInteriores/tablon01.jpg" alt="" class="ef-carousel__item" />
+                        <img src="images/diseñoInteriores/tablon02.jpg" alt=" " class="ef-carousel__item" />
+                        <img src="images/diseñoInteriores/tablon03.jpg" alt="" class="ef-carousel__item" />
+                    </div>
+                    <div class="ef-carousel__next-group">
+                        <label for="unique-name-2" class="ef-carousel__next"></label>
+                        <label for="unique-name-3" class="ef-carousel__next"></label>
+                        <label for="unique-name-1" class="ef-carousel__next"></label>
+                    </div>
+                    <div class="ef-carousel__prev-group">
+                        <label for="unique-name-3" class="ef-carousel__prev"></label>
+                        <label for="unique-name-2" class="ef-carousel__prev"></label>
+                        <label for="unique-name-1" class="ef-carousel__prev"></label>
+                    </div>
+                    <div class="ef-carousel__dots">
+                        <label for="unique-name-1" class="ef-carousel__dot"></label>
+                        <label for="unique-name-2" class="ef-carousel__dot"></label>
+                        <label for="unique-name-3" class="ef-carousel__dot"></label>
+                    </div>
+                </div>
             </div>
         </section>
+
 
         <footer>
         </footer>
     </main>
+
+
 </body>
 
 </html>
