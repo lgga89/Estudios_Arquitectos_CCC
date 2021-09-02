@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 html {
   scroll-behavior: smooth;
+  color: #909090;
 }
 
 header {
@@ -14,7 +15,7 @@ header .header__logo img {
 }
 
 header {
-  background: #272626;
+  background: white;
   margin: 0;
   padding: 0;
 }
@@ -118,7 +119,7 @@ body {
   position: absolute;
   top: 25px;
   right: 25px;
-  background: white;
+  background: #999;
   width: 30px;
   height: 5px;
   -webkit-transition: 0.2s ease;
@@ -237,32 +238,39 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.portada video {
+.portada .portada__img {
+  background-image: url("../images/slider.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 650px;
 }
 
 .portada_title {
+  margin-top: 50px;
   padding: 0 40px;
+  text-align: center;
 }
 
 .portada_title {
   position: absolute;
   color: white;
   font-size: 12px;
-  padding-left: 5px;
+}
+
+.portada_title h3 {
+  color: #999;
 }
 
 .portada_title .title__principal {
-  color: #edbb5f;
-  font-family: "Raleway", sans-serif;
+  color: white;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -271,76 +279,27 @@ video::-webkit-media-controls {
 }
 
 .description {
-  padding: 0 10px;
+  padding: 0 5px 70px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  text-align: justify;
-  font-size: 18px;
   text-align: center;
 }
 
 .description h1 {
   color: #7a7a7a;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.triangulo {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.triangulo .triangulo__container {
-  margin: 0 auto;
-  width: 0;
-  height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-top: 50px solid;
-  color: #7a7a7a;
-}
-
-.arquitecto {
-  padding: 0 10px;
-}
-
-.arquitecto .arqutiecto__information h2 {
-  color: #7a7a7a;
-}
-
-.arquitecto .arqutiecto__information p {
-  line-height: 1.85714285714286;
-}
-
-.arquitecto .arqutiecto__information button {
-  border-radius: 20px;
-  padding: 10px 15px;
-  border-color: #c4c4c4;
-  border-style: solid;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-left-width: 1px;
-  border-bottom-width: 1px;
-}
-
-.arquitecto .arquitecto__imagen {
-  padding-top: 50px;
+.description .description__parrafo {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   text-align: center;
-}
-
-.arquitecto .arquitecto__imagen img {
-  max-width: 80%;
-}
-
-.arquitecto .arquitecto__imagen h6 {
-  text-align: center;
+  line-height: 2;
+  color: #909090;
 }
 
 .portafolio {
-  padding: 0 10px;
+  padding: 0 10px 70px;
 }
 
 .portafolio h2 {
@@ -352,20 +311,8 @@ video::-webkit-media-controls {
   font-family: "Roboto", sans-serif;
 }
 
-.portafolio_description {
-  padding: 0 10px;
-}
-
-.portafolio_description h2 {
-  color: #7a7a7a;
-}
-
-.portafolio_description p {
-  line-height: 1.85714285714286;
-  font-family: "Roboto", sans-serif;
-}
-
-.portafolio_description button {
+.portafolio .btn {
+  cursor: pointer;
   border-radius: 20px;
   padding: 10px 15px;
   border-color: #c4c4c4;
@@ -383,6 +330,7 @@ video::-webkit-media-controls {
   max-width: 1280px;
   margin: 0 auto;
   overflow: hidden;
+  padding-bottom: 70px;
 }
 
 .ef-carousel__state {
@@ -495,4 +443,35 @@ video::-webkit-media-controls {
 .ef-carousel__state:checked:nth-child(3) ~ .ef-carousel__prev-group .ef-carousel__prev:nth-child(3),
 .ef-carousel__state:checked:nth-child(3) ~ .ef-carousel__next-group .ef-carousel__next:nth-child(3) {
   display: block;
+}
+
+.services {
+  padding: 0 10px 70px;
+}
+
+.services h1 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.services .services__img .service__ico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+}
+
+.services .services__img .service__ico img {
+  width: 40px;
+}
+
+.services .services__img .service__ico p {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+footer {
+  background: #333232;
+  padding: 10px;
+  text-align: center;
 }

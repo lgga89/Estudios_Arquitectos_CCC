@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  color: #909090;
 }
 header {
   display: flex;
@@ -12,7 +13,7 @@ header {
 }
 
 header {
-  background: rgb(39, 38, 38);
+  background: rgba(255, 255, 255, 100);
   margin: 0;
   padding: 0;
   .nave {

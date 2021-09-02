@@ -15,7 +15,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
 
     <title>Estudios | Arquitectos | CCC</title>
@@ -25,10 +25,8 @@
     <main class="container">
 
         <header>
-
             <div class="header__logo">
-
-                <img src="images/logo.png" alt="">
+                <img src="images/01.png" alt="">
             </div>
             <div class="nave">
                 <input type="checkbox" id="menu-toggle" />
@@ -36,7 +34,6 @@
                 <label id="burger" for="menu-toggle"></label>
                 <div class="hambuerguesa" id="menu">
                     <li><a href="#sobreNosotros">Sobre Nosotros</a></li>
-
                     <li><a href="#Portafolio">Portafolio</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </div>
@@ -44,107 +41,91 @@
         </header>
 
         <section class="portada">
-            <video autoplay controls="false" src="images/video.mp4" loop>
-            </video>
-            <!--<video autoplay controls="false" src="images/video.mp4" loop>
-            </video>-->
+            <div class="portada__img">
+            </div>
             <div class="portada_title">
-                <h1 class="title__principal">ESTUDIOS ARQUITECTOS CCC</h1>
+                <h1 class="title__principal">Estudios Arquitectos CCC - PERÚ</h1>
                 <h3>Especialistas en diseño de vivienda arquitectura e interiores</h3>
             </div>
         </section>
 
         <section class="description">
             <h1>CCC</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dignissimos aut nostrum praesentium
-                officiis reiciendis doloribus nulla, sequi, repudiandae enim, vitae error laboriosam a. Itaque aut animi
-                veniam rem ipsum.</p>
+            <p class="description__parrafo">Las obras del estudio son el producto de un constante intercambio de
+                ideas,
+                del uso de la innovación en
+                tecnologías pertinentes y de nuestro placer y motivación por hacer arquitectura</p>
+        </section>
+
+        <section class="services">
+            <h1>Servicios de Arquitectura y Diseño.</h1>
+            <div class="services__img">
+                <div class="service__ico">
+                    <img src="images/icon/decoration-d'interieur.svg" alt="">
+                    <p>Arquitectura y Diseño de Interiores.</p>
+                </div>
+                <div class="service__ico">
+                    <img src="images/icon/plan-de-la-maison.svg" alt="">
+                    <p>Decoracion de Interiores y Exteriores.</p>
+                </div>
+                <div class="service__ico">
+                    <img src="images/icon/rendering.svg" alt="">
+                    <p>Archiz, Render y Arquitectura 3D.</p>
+                </div>
+                <div class="service__ico">
+                    <img src="images/icon/building.svg" alt="">
+                    <p>Construcción Arquitectónica.</p>
+                </div>
+            </div>
         </section>
 
 
+        <section class="ef-carousel" id="sobreNosotros">
 
-        <div class="triangulo">
-            <div class="triangulo__container"></div>
-        </div>
+            <!--  Each carousel on the page needs to have an unique name  -->
+            <input type="radio" name="unique-name" id="unique-name-1" checked class="ef-carousel__state" />
+            <input type="radio" name="unique-name" id="unique-name-2" class="ef-carousel__state" />
+            <input type="radio" name="unique-name" id="unique-name-3" class="ef-carousel__state" />
+            <div class="ef-carousel__items">
+                <img src="images/diseñoInteriores/inter01.jpg" alt="" class="ef-carousel__item" />
+                <img src="images/diseñoInteriores/inter02.jpg" alt=" " class="ef-carousel__item" />
+                <img src="images/diseñoInteriores/inter03.jpg" alt="" class="ef-carousel__item" />
+            </div>
+            <div class="ef-carousel__next-group">
+                <label for="unique-name-2" class="ef-carousel__next"></label>
+                <label for="unique-name-3" class="ef-carousel__next"></label>
+                <label for="unique-name-1" class="ef-carousel__next"></label>
+            </div>
+            <div class="ef-carousel__prev-group">
+                <label for="unique-name-3" class="ef-carousel__prev"></label>
+                <label for="unique-name-2" class="ef-carousel__prev"></label>
+                <label for="unique-name-1" class="ef-carousel__prev"></label>
+            </div>
+            <div class="ef-carousel__dots">
+                <label for="unique-name-1" class="ef-carousel__dot"></label>
+                <label for="unique-name-2" class="ef-carousel__dot"></label>
+                <label for="unique-name-3" class="ef-carousel__dot"></label>
+            </div>
 
-        <section class="arquitecto" id="sobreNosotros">
-            <div class="arqutiecto__information">
-                <h2>Estudio de Diseño Digital Tacna - Perú</h2>
-                <p class="arquitecto__">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat
-                    impedit quae fugit nulla
-                    unde at beatae illum cum architecto eaque, quis maiores vitae illo temporibus odio, perspiciatis
-                    fugiat molestias.</p>
-                <!--<button>Sobre Nosotros > </button>-->
-            </div>
-            <div class="arquitecto__imagen">
-                <img src="images/arq.png" alt="">
-                <h6>Christian Gerente general(Fundador)</h6>
-            </div>
         </section>
 
         <section class="portafolio" id="Portafolio">
             <h2>Portafolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptate quaerat repudiandae illo
-                temporibus ullam impedit voluptatibus.</p>
-            <div class="interior">
-                <div class="portafolio_description">
-                    <h2>Diseño de Interiores</h2>
-                    <h3>Sala - Comedor "Casa"</h3>
-                    <p><strong>Ubicación: </strong> Ilo - Perú</p>
-                    <p><strong>Area: </strong> 20m2</p>
-                    <p><strong> Cliente: </strong>Sr. Diego Garcia</p>
-                    <p><strong> Description: </strong></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil nemo dolorum architecto
-                        fugiat. Itaque quo perferendis officiis ratione minus illo veritatis expedita, amet odit quod
-                        eaque
-                        natus perspiciatis voluptas?</p>
-                </div>
-
-            </div>
-            <div class="tablon">
-                <div class="portafolio_description">
-                    <h2>Diseño de Interiores</h2>
-                    <h3>Sala - Comedor "Tablon"</h3>
-                    <p><strong>Ubicación: </strong> Ilo - Perú</p>
-                    <p><strong>Area: </strong> 20m2</p>
-                    <p><strong> Cliente: </strong>Sr. Diego Garcia</p>
-                    <p><strong> Description: </strong></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil nemo dolorum architecto
-                        fugiat. Itaque quo perferendis officiis ratione minus illo veritatis expedita, amet odit quod
-                        eaque
-                        natus perspiciatis voluptas?</p>
-                </div>
-                <div class="ef-carousel">
-                    <!--  Each carousel on the page needs to have an unique name  -->
-                    <input type="radio" name="unique-name" id="unique-name-1" checked class="ef-carousel__state" />
-                    <input type="radio" name="unique-name" id="unique-name-2" class="ef-carousel__state" />
-                    <input type="radio" name="unique-name" id="unique-name-3" class="ef-carousel__state" />
-                    <div class="ef-carousel__items">
-                        <img src="images/diseñoInteriores/tablon01.jpg" alt="" class="ef-carousel__item" />
-                        <img src="images/diseñoInteriores/tablon02.jpg" alt=" " class="ef-carousel__item" />
-                        <img src="images/diseñoInteriores/tablon03.jpg" alt="" class="ef-carousel__item" />
-                    </div>
-                    <div class="ef-carousel__next-group">
-                        <label for="unique-name-2" class="ef-carousel__next"></label>
-                        <label for="unique-name-3" class="ef-carousel__next"></label>
-                        <label for="unique-name-1" class="ef-carousel__next"></label>
-                    </div>
-                    <div class="ef-carousel__prev-group">
-                        <label for="unique-name-3" class="ef-carousel__prev"></label>
-                        <label for="unique-name-2" class="ef-carousel__prev"></label>
-                        <label for="unique-name-1" class="ef-carousel__prev"></label>
-                    </div>
-                    <div class="ef-carousel__dots">
-                        <label for="unique-name-1" class="ef-carousel__dot"></label>
-                        <label for="unique-name-2" class="ef-carousel__dot"></label>
-                        <label for="unique-name-3" class="ef-carousel__dot"></label>
-                    </div>
-                </div>
-            </div>
+            <p>Nuestro estudio de arquitectos diseña y desarrolla proyectos arquitectónicos innovadores, considerando la
+                estética y funcionalidad del proyecto con la finalidad de mejorar la experiencia de cada cliente.</p>
+            <button class="btn">Ver Proyectos</button>
+        </section>
+        <section class="contacto">
+            <h1>Contáctenos</h1>
+            <p>WSP</p>
+            <P>FONO</P>
+            <P>UBICACION</P>
+            <p>CORREO</p>
+            <P>FACEBOOK</P>
         </section>
 
-
         <footer>
+            <p>© 2021 CCC ARQUITECTOS. TODOS LOS DERECHOS RESERVADOS</p>
         </footer>
     </main>
 
