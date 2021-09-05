@@ -1,19 +1,69 @@
 .services {
   padding: 0 10px 70px;
-  h1 {
+  font-family: "Montserrat";
+  .services__title {
     font-size: 24px;
     line-height: 1.5;
+    text-align: center;
+    font-family: "Montserrat";
   }
   .services__img {
     .service__ico {
       display: flex;
+      align-items: center;
       padding-top: 15px;
       img {
         width: 40px;
       }
-      p {
+      .service__parrafo {
         font-size: 14px;
         padding-left: 10px;
+      }
+      .fas {
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: 480px) {
+  .services {
+    padding: 0 16px 70px;
+    .services__title {
+      font-size: 30px;
+    }
+    .services__img {
+      .service__ico {
+        .service__parrafo {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 881px) {
+  .services {
+    padding: 0 32px 0 80px;
+    border-left: solid 1px #dedede;
+    .services__title {
+      text-align: left;
+    }
+    .services__img {
+      .service__ico {
+        padding: 4px 0;
+        img {
+          width: 40px;
+        }
+        .service__parrafo {
+          font-size: 14px;
+          padding-right: 0px;
+        }
+        .fas {
+          display: block;
+          padding-left: 20px;
+          font-size: 20px;
+          color: #4caf50;
+        }
       }
     }
   }
