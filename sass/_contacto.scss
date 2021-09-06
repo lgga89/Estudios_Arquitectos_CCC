@@ -14,7 +14,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+
+    justify-content: space-around;
     .contacto__ico {
       padding: 5px 16px;
       .size {
@@ -31,6 +32,14 @@
     }
     .iconos__contacto {
       font-size: 16px;
+    }
+  }
+}
+@media (min-width: 1300px) {
+  .contacto {
+    .iconos__contacto {
+      display: flex;
+      justify-content: space-around;
     }
   }
 }

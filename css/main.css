@@ -1,4 +1,3 @@
-@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
 html {
   scroll-behavior: smooth;
   color: #909090;
@@ -13,19 +12,59 @@ html body {
 }
 
 header {
-  background: #fff;
+  background: #ca2e2e;
+}
+
+header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: peru;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header .header__logo img {
   width: 60px;
 }
 
-[class*="fontawesome-"]:before {
-  font-family: "FontAwesome", sans-serif;
-  color: rgba(51, 51, 51, 0.9);
+header .menu2 {
+  display: none;
+}
+
+@media (min-width: 925px) {
+  .fontawesome-align-justify {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  header .header__logo img {
+    padding: 10px;
+  }
+  header .menu2 {
+    display: block;
+  }
+  header .menu2 .menu_option2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  header .menu2 .menu_option2 li {
+    padding-left: 50px;
+    padding-top: 10px;
+  }
+  header .menu2 .menu_option2 li a {
+    font-family: "Montserrat";
+    list-style: none;
+    text-decoration: none;
+    margin: 0 10px;
+  }
 }
 
 header {
@@ -34,13 +73,17 @@ header {
   z-index: 3;
 }
 
+.fontawesome-align-justify {
+  color: black;
+}
+
 .boton-menu {
   width: 98%;
   margin: auto;
 }
 
 header .boton-menu {
-  display: table;
+  display: none;
 }
 
 header label {
@@ -84,6 +127,83 @@ header label {
 #menu-bar:checked ~ .menu {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+#hamburger-wrapper {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.burger {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.burger,
+.burger:before,
+.burger:after {
+  padding: 0;
+  background-color: #909090;
+  width: 80%;
+  height: 8px;
+  -webkit-transition: margin 0.1s 0.2s, -webkit-transform 0.2s;
+  transition: margin 0.1s 0.2s, -webkit-transform 0.2s;
+  transition: margin 0.1s 0.2s, transform 0.2s;
+  transition: margin 0.1s 0.2s, transform 0.2s, -webkit-transform 0.2s;
+  border-radius: 10%;
+}
+
+.burger:before,
+.burger:after {
+  margin: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.burger:before {
+  margin-top: -12px;
+}
+
+.burger:after {
+  margin-top: 12px;
+}
+
+/* STYLES FOR OUR BURGER WHEN THE MENU OPENS */
+.open .burger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.open .burger,
+.open .burger:before,
+.open .burger:after {
+  -webkit-transition: margin 0.2s, -webkit-transform 0.1s 0.2s;
+  transition: margin 0.2s, -webkit-transform 0.1s 0.2s;
+  transition: margin 0.2s, transform 0.1s 0.2s;
+  transition: margin 0.2s, transform 0.1s 0.2s, -webkit-transform 0.1s 0.2s;
+}
+
+.open .burger:before,
+.open .burger:after {
+  margin-top: 0;
+}
+
+.open .burger:after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 @media (min-width: 320px) {
@@ -198,6 +318,12 @@ header label {
   }
 }
 
+@media (min-width: 1300px) {
+  .description {
+    margin: 0 50px;
+  }
+}
+
 .portafolio {
   padding: 0 10px 70px;
   font-family: "Montserrat";
@@ -222,6 +348,7 @@ header label {
   border-right-width: 1px;
   border-left-width: 1px;
   border-bottom-width: 1px;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------*/
@@ -268,6 +395,12 @@ header label {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .portafolio {
+    margin: 0 50px;
   }
 }
 
@@ -506,9 +639,8 @@ header label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .contacto .iconos__contacto .contacto__ico {
@@ -526,6 +658,16 @@ header label {
   }
   .contacto .iconos__contacto {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contacto .iconos__contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 

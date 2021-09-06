@@ -20,6 +20,7 @@
       border-right-width: 1px;
       border-left-width: 1px;
       border-bottom-width: 1px;
+      text-decoration: none;
     }
   }
 }
@@ -61,5 +62,10 @@
         display: inline-block;
       }
     }
+  }
+}
+@media (min-width: 1300px) {
+  .portafolio {
+    margin: 0 50px;
   }
 }

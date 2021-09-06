@@ -1,20 +1,17 @@
-@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
-[class*="fontawesome-"]:before {
-  font-family: "FontAwesome", sans-serif;
-  color: rgba(51, 51, 51, 0.9);
-}
-
 header {
   color: #fff;
   position: relative;
   z-index: 3;
+}
+.fontawesome-align-justify {
+  color: black;
 }
 .boton-menu {
   width: 98%;
   margin: auto;
 }
 header .boton-menu {
-  display: table;
+  display: none;
 }
 
 header label {
@@ -56,6 +53,73 @@ header label {
 #menu-bar:checked ~ .menu {
   transform: translateX(0%);
 }
+//---------------------------------------------
+#hamburger-wrapper {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.burger {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.burger,
+.burger:before,
+.burger:after {
+  padding: 0;
+  background-color: #909090;
+  width: 80%;
+  height: 8px;
+  transition: margin 0.1s 0.2s, transform 0.2s;
+  border-radius: 10%;
+}
+
+.burger:before,
+.burger:after {
+  margin: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.burger:before {
+  margin-top: -12px;
+}
+
+.burger:after {
+  margin-top: 12px;
+}
+
+/* STYLES FOR OUR BURGER WHEN THE MENU OPENS */
+.open .burger {
+  transform: rotate(45deg);
+}
+
+.open .burger,
+.open .burger:before,
+.open .burger:after {
+  transition: margin 0.2s, transform 0.1s 0.2s;
+}
+
+.open .burger:before,
+.open .burger:after {
+  margin-top: 0;
+}
+
+.open .burger:after {
+  transform: rotate(-90deg);
+}
+//---------------------
+
 @media (min-width: 320px) {
   .menu {
     text-align: center;
