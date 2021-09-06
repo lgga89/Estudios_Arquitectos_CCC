@@ -1,55 +1,17 @@
 header {
-  background: rgb(202, 46, 46);
+  background: #fff;
+  position: relative;
+  z-index: 3;
 
-  .container {
+  .container__header {
     display: flex;
     justify-content: space-between;
-    background: peru;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .header__logo {
-    img {
-      width: 60px;
-    }
-  }
-  .menu2 {
-    display: none;
-  }
-}
-
-@media (min-width: 925px) {
-  .fontawesome-align-justify {
-    display: none;
-  }
-  .menu {
-    display: none;
-  }
-
-  header {
+    padding: 0 20px;
+    //max-width: 1200px;
+    //margin: 0 auto;
     .header__logo {
       img {
-        padding: 10px;
-      }
-    }
-
-    .menu2 {
-      display: block;
-      .menu_option2 {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        li {
-          padding-left: 50px;
-          padding-top: 10px;
-          a {
-            font-family: "Montserrat";
-            list-style: none;
-            text-decoration: none;
-            margin: 0 10px;
-          }
-        }
+        width: 60px;
       }
     }
   }

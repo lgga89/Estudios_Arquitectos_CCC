@@ -26,130 +26,129 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container__header">
             <div class=" header__logo">
                 <img src="images/01.png" alt="">
             </div>
-            <div class="boton-menu">
+            <div class="menu__hamburger ">
                 <input type="checkbox" id="menu-bar">
-                <label class="fontawesome-align-justify" for="menu-bar">
-                    <div id="hamburger-wrapper" class="">
+                <label class="hamburger__container" for="menu-bar">
+                    <div id="hamburger__wrapper" class="">
                         <p class="burger"></p>
                     </div>
                 </label>
-                <nav class="menu">
-                    <div class="menu_option">
-                        <a id="menu-opcion" href="#sobreNosotros">Sobre Nosotros</a>
-                        <a id="menu-opcion" href="#servicios">Servicios</a>
-                        <a id="menu-opcion" href="#Portafolio">Portafolio</a>
-                        <a id="menu-opcion" href="#Contacto">Contacto</a>
+                <nav class="menu__dropdown">
+                    <div class="menu_items">
+                        <a class="items" href="#sobreNosotros">Sobre Nosotros</a>
+                        <a class="items" href="#servicios">Servicios</a>
+                        <a class="items" href="#Portafolio">Portafolio</a>
+                        <a class="items" href="#Contacto">Contacto</a>
                     </div>
                 </nav>
             </div>
-            <nav class="menu2">
-                <ul class="menu_option2">
-                    <li><a id="menu-opcion2" href="#sobreNosotros">Sobre Nosotros</a></li>
-                    <li><a id="menu-opcion2" href="#servicios">Servicios</a></li>
-                    <li><a id="menu-opcion2" href="#Portafolio">Portafolio</a></li>
-                    <li><a id="menu-opcion2" href="#Contacto">Contacto</a></li>
+            <nav class="menu">
+                <ul class="menu__container">
+                    <li><a id="menu__items" href="#sobreNosotros">Sobre Nosotros</a></li>
+                    <li><a id="menu__items" href="#servicios">Servicios</a></li>
+                    <li><a id="menu__items" href="#Portafolio">Portafolio</a></li>
+                    <li><a id="menu__items" href="#Contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-
-
     </header>
 
     <main>
-        <section class=" portada">
-            <div class="portada__img">
+        <section class="cover">
+            <div class="cover__img">
             </div>
-            <div class="portada_title">
+            <div class="cover__title">
                 <h1 class="title__principal">Estudios Arquitectos CCC - PERÚ</h1>
                 <h3>Especialistas en diseño de vivienda arquitectura e interiores</h3>
             </div>
         </section>
-    </main>
-    <div class="container_caracter">
-        <section class="description" id="sobreNosotros">
-            <h2 class="description__title">CCC</h2>
-            <p class="description__parrafo">Las obras del estudio son el producto de un constante intercambio de
-                ideas,
-                del uso de la innovación en
-                tecnologías pertinentes y de nuestro placer y motivación por hacer arquitectura</p>
-        </section>
 
-        <section class=" services" id="servicios">
-            <h2 class="services__title">Servicios de Arquitectura y Diseño.</h2>
-            <div class="services__img">
-                <div class="service__ico">
-                    <img src="images/icon/decoration-d'interieur.svg" alt="">
-                    <p class="service__parrafo">Arquitectura y Diseño de Interiores.</p>
-                    <i class=" fas fa-caret-right"></i>
+        <div class="information">
+            <section class="description" id="sobreNosotros">
+                <h2 class="description__title">CCC</h2>
+                <p class="description__paragraph">Las obras del estudio son el producto de un constante intercambio de
+                    ideas,
+                    del uso de la innovación en
+                    tecnologías pertinentes y de nuestro placer y motivación por hacer arquitectura</p>
+            </section>
+
+            <section class=" services" id="servicios">
+                <h2 class="services__title">Servicios de Arquitectura y Diseño.</h2>
+                <div class="services__img">
+                    <div class="service__ico">
+                        <img src="images/icon/decoration-d'interieur.svg" alt="">
+                        <p class="service__parrafo">Arquitectura y Diseño de Interiores.</p>
+                        <i class=" fas fa-caret-right"></i>
+                    </div>
+
+                    <div class="service__ico">
+                        <img src="images/icon/plan-de-la-maison.svg" alt="">
+                        <p class="service__parrafo">Decoracion de Interiores y Exteriores.</p>
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+
+                    <div class="service__ico">
+                        <img src="images/icon/rendering.svg" alt="">
+                        <p class="service__parrafo">Archiz, Render y Arquitectura 3D.</p>
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+
+                    <div class="service__ico">
+                        <img src="images/icon/building.svg" alt="">
+                        <p class="service__parrafo">Construcción Arquitectónica. </p>
+                        <i class="fas fa-caret-right"></i>
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="ef-carousel" id="sobreNosotros">
+                <!--  Each carousel on the page needs to have an unique name  -->
+                <input type="radio" name="unique-name" id="unique-name-1" checked class="ef-carousel__state" />
+                <input type="radio" name="unique-name" id="unique-name-2" class="ef-carousel__state" />
+                <input type="radio" name="unique-name" id="unique-name-3" class="ef-carousel__state" />
+                <div class="ef-carousel__items">
+                    <img src="images/diseñoInteriores/inter01.jpg" alt="" class="ef-carousel__item" />
+                    <img src="images/diseñoInteriores/inter02.jpg" alt=" " class="ef-carousel__item" />
+                    <img src="images/diseñoInteriores/inter03.jpg" alt="" class="ef-carousel__item" />
                 </div>
 
-                <div class="service__ico">
-                    <img src="images/icon/plan-de-la-maison.svg" alt="">
-                    <p class="service__parrafo">Decoracion de Interiores y Exteriores.</p>
-                    <i class="fas fa-caret-right"></i>
+
+                <div class="ef-carousel__next-group">
+                    <label for="unique-name-2" class="ef-carousel__next"></label>
+                    <label for="unique-name-3" class="ef-carousel__next"></label>
+                    <label for="unique-name-1" class="ef-carousel__next"></label>
+                </div>
+                <div class="ef-carousel__prev-group">
+                    <label for="unique-name-3" class="ef-carousel__prev"></label>
+                    <label for="unique-name-2" class="ef-carousel__prev"></label>
+                    <label for="unique-name-1" class="ef-carousel__prev"></label>
+                </div>
+                <div class="ef-carousel__dots">
+                    <label for="unique-name-1" class="ef-carousel__dot"></label>
+                    <label for="unique-name-2" class="ef-carousel__dot"></label>
+                    <label for="unique-name-3" class="ef-carousel__dot"></label>
                 </div>
 
-                <div class="service__ico">
-                    <img src="images/icon/rendering.svg" alt="">
-                    <p class="service__parrafo">Archiz, Render y Arquitectura 3D.</p>
-                    <i class="fas fa-caret-right"></i>
-                </div>
-
-                <div class="service__ico">
-                    <img src="images/icon/building.svg" alt="">
-                    <p class="service__parrafo">Construcción Arquitectónica. </p>
-                    <i class="fas fa-caret-right"></i>
-
-
-                </div>
-            </div>
-        </section>
-        <section class="ef-carousel" id="sobreNosotros">
-            <!--  Each carousel on the page needs to have an unique name  -->
-            <input type="radio" name="unique-name" id="unique-name-1" checked class="ef-carousel__state" />
-            <input type="radio" name="unique-name" id="unique-name-2" class="ef-carousel__state" />
-            <input type="radio" name="unique-name" id="unique-name-3" class="ef-carousel__state" />
-            <div class="ef-carousel__items">
-                <img src="images/diseñoInteriores/inter01.jpg" alt="" class="ef-carousel__item" />
-                <img src="images/diseñoInteriores/inter02.jpg" alt=" " class="ef-carousel__item" />
-                <img src="images/diseñoInteriores/inter03.jpg" alt="" class="ef-carousel__item" />
-            </div>
-
-
-            <div class="ef-carousel__next-group">
-                <label for="unique-name-2" class="ef-carousel__next"></label>
-                <label for="unique-name-3" class="ef-carousel__next"></label>
-                <label for="unique-name-1" class="ef-carousel__next"></label>
-            </div>
-            <div class="ef-carousel__prev-group">
-                <label for="unique-name-3" class="ef-carousel__prev"></label>
-                <label for="unique-name-2" class="ef-carousel__prev"></label>
-                <label for="unique-name-1" class="ef-carousel__prev"></label>
-            </div>
-            <div class="ef-carousel__dots">
-                <label for="unique-name-1" class="ef-carousel__dot"></label>
-                <label for="unique-name-2" class="ef-carousel__dot"></label>
-                <label for="unique-name-3" class="ef-carousel__dot"></label>
-            </div>
-
-        </section>
-    </div>
-
-    <section class=" portafolio" id="Portafolio">
-        <h2 class="portafolio__title">Portafolio</h2>
-        <div class="portafolio__container">
-            <p class="portafolio__parrafo">Nuestro estudio de arquitectos diseña y desarrolla proyectos
-                arquitectónicos
-                innovadores, considerando la
-                estética y funcionalidad del proyecto con la finalidad de mejorar la experiencia de cada cliente.
-            </p>
-            <a href="proyectos.html" class="btn">Ver Proyectos</a>
+            </section>
         </div>
-    </section>
+
+        <section class=" projects" id="Projects">
+            <h2 class="projects__title">Portafolio</h2>
+            <div class="projects__container">
+                <p class="projects__parrafo">Nuestro estudio de arquitectos diseña y desarrolla proyectos
+                    arquitectónicos
+                    innovadores, considerando la
+                    estética y funcionalidad del proyecto con la finalidad de mejorar la experiencia de cada cliente.
+                </p>
+                <a href="proyectos.html" class="projects__btn">Ver Proyectos</a>
+            </div>
+        </section>
+    </main>
 
     <section class="contacto" id="Contacto">
         <h1 class="contacto_title">Contactos</h1>
@@ -178,10 +177,10 @@
         </div>
     </section>
 
-
     <footer>
         <p>© 2021 CCC ARQUITECTOS. TODOS LOS DERECHOS RESERVADOS</p>
     </footer>
+
     <script>const wrapper = document.getElementById('hamburger-wrapper')
         wrapper.addEventListener("click", () => {
             wrapper.classList.toggle("open")
