@@ -27,32 +27,32 @@
 
 /*--------------------------------------------------------------*/
 @media (min-width: 480px) {
-  .portafolio {
+  .projects {
     padding: 0 16px 70px;
-    .portafolio__title {
+    .projects__title {
       font-size: 30px;
     }
-    .portafolio__parrafo {
+    .projects__parrafo {
       font-size: 16px;
     }
   }
 }
 
 @media (min-width: 881px) {
-  .portafolio {
+  .projects {
     padding: 0 32px;
-    .portafolio__title {
+    .projects__title {
       text-align: left;
     }
-    .portafolio__container {
+    .projects__container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      .portafolio__parrafo {
+      .projects__paragraph {
         width: 80%;
       }
-      .btn {
+      .projects__btn {
         background-color: #4caf50; /* Green */
         border: none;
         color: white;
@@ -62,10 +62,5 @@
         display: inline-block;
       }
     }
-  }
-}
-@media (min-width: 1300px) {
-  .portafolio {
-    margin: 0 50px;
   }
 }

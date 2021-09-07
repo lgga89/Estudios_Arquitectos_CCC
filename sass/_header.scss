@@ -16,3 +16,9 @@ header {
     }
   }
 }
+@media (min-width: 1300px) {
+  .container {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
