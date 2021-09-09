@@ -1,5 +1,6 @@
 .projects {
   padding: 0 10px 70px;
+  text-align: justify;
   font-family: "Montserrat";
 
   .projects__title {
@@ -14,12 +15,8 @@
       cursor: pointer;
       border-radius: 20px;
       padding: 10px 15px;
-      border-color: #c4c4c4;
-      border-style: solid;
-      border-top-width: 1px;
-      border-right-width: 1px;
-      border-left-width: 1px;
-      border-bottom-width: 1px;
+      border: solid 1px #c4c4c4;
+      color: #7a7a7a;
       text-decoration: none;
     }
   }

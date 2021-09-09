@@ -9,6 +9,8 @@ html body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 header {
@@ -24,17 +26,15 @@ header .container__header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 20px;
 }
 
 header .container__header .header__logo img {
   width: 60px;
 }
 
-@media (min-width: 1300px) {
-  .container {
-    padding-right: 80px;
-    padding-left: 80px;
+@media (min-width: 480px) {
+  header {
+    padding: 0 16px;
   }
 }
 
@@ -215,8 +215,8 @@ header .container__header .header__logo img {
 }
 
 .cover .cover__img {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 22, 32, 0.75)), to(rgba(5, 7, 12, 0.75))), url("../images/slider.jpg") no-repeat center center fixed;
-  background: linear-gradient(rgba(17, 22, 32, 0.75), rgba(5, 7, 12, 0.75)), url("../images/slider.jpg") no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 22, 32, 0.75)), to(rgba(81, 91, 112, 0.75))), url("../images/slider.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(17, 22, 32, 0.75), rgba(81, 91, 112, 0.75)), url("../images/slider.jpg") no-repeat center center fixed;
   background-size: cover;
   width: 100%;
   height: 650px;
@@ -308,6 +308,7 @@ header .container__header .header__logo img {
 
 .projects {
   padding: 0 10px 70px;
+  text-align: justify;
   font-family: "Montserrat";
 }
 
@@ -324,12 +325,8 @@ header .container__header .header__logo img {
   cursor: pointer;
   border-radius: 20px;
   padding: 10px 15px;
-  border-color: #c4c4c4;
-  border-style: solid;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-left-width: 1px;
-  border-bottom-width: 1px;
+  border: solid 1px #c4c4c4;
+  color: #7a7a7a;
   text-decoration: none;
 }
 
@@ -619,7 +616,7 @@ header .container__header .header__logo img {
   padding: 20px;
 }
 
-.contact .iconos__contact {
+.contact .icons__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,11 +629,11 @@ header .container__header .header__logo img {
       justify-content: space-around;
 }
 
-.contact .iconos__contact .contact__ico {
+.contact .icons__contact .contact__ico {
   padding: 5px 16px;
 }
 
-.contact .iconos__contact .contact__ico .size {
+.contact .icons__contact .contact__ico .size {
   font-size: 40px;
   color: white;
 }
@@ -645,11 +642,19 @@ header .container__header .header__logo img {
   .contact .contact_title {
     font-size: 30px;
   }
-  .contact .iconos__contact {
+  .contact .icons__contact {
     font-size: 16px;
   }
-  .contact .iconos__contact .size:hover {
+  .contact .icons__contact .size:hover {
     color: #4caf50;
+  }
+}
+
+@media (min-width: 876px) {
+  .contact__ico {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
