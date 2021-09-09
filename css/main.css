@@ -167,6 +167,10 @@ header .container__header .header__logo img {
   display: none;
 }
 
+.menu .menu__container #menu__items {
+  color: #909090;
+}
+
 @media (min-width: 320px) {
   .menu__dropdown {
     text-align: center;
@@ -374,6 +378,9 @@ header .container__header .header__logo img {
     text-decoration: none;
     display: inline-block;
   }
+  .projects .projects__container .projects__btn:hover {
+    background-color: #106610;
+  }
 }
 
 .ef-carousel {
@@ -573,7 +580,12 @@ header .container__header .header__logo img {
   .services .services__img .service__ico {
     padding: 4px 0;
   }
-  .services .services__img .service__ico img {
+  .services .services__img .service__ico .service__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .services .services__img .service__ico .service__description img {
     width: 40px;
   }
   .services .services__img .service__ico .service__parrafo {
@@ -586,6 +598,11 @@ header .container__header .header__logo img {
     font-size: 20px;
     color: #4caf50;
   }
+}
+
+.service__ico:hover {
+  background: #8a8989;
+  color: #fff;
 }
 
 .contact {
@@ -630,6 +647,9 @@ header .container__header .header__logo img {
   }
   .contact .iconos__contact {
     font-size: 16px;
+  }
+  .contact .iconos__contact .size:hover {
+    color: #4caf50;
   }
 }
 
