@@ -169,6 +169,7 @@ header .container__header .header__logo img {
 
 .menu .menu__container #menu__items {
   color: #909090;
+  font-weight: bold;
 }
 
 @media (min-width: 320px) {
