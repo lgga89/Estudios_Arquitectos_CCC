@@ -33,9 +33,7 @@
     }
     .services__img {
       .service__ico {
-        .service__parrafo {
-          font-size: 16px;
-        }
+        font-size: 16px;
       }
     }
   }
@@ -51,12 +49,10 @@
     .services__img {
       .service__ico {
         padding: 4px 0;
-        .service__description {
-          display: flex;
+        display: flex;
 
-          img {
-            width: 40px;
-          }
+        img {
+          width: 40px;
         }
 
         .service__parrafo {

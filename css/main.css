@@ -562,7 +562,7 @@ header .container__header .header__logo img {
   .services .services__title {
     font-size: 30px;
   }
-  .services .services__img .service__ico .service__parrafo {
+  .services .services__img .service__ico {
     font-size: 16px;
   }
 }
@@ -577,13 +577,11 @@ header .container__header .header__logo img {
   }
   .services .services__img .service__ico {
     padding: 4px 0;
-  }
-  .services .services__img .service__ico .service__description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .services .services__img .service__ico .service__description img {
+  .services .services__img .service__ico img {
     width: 40px;
   }
   .services .services__img .service__ico .service__parrafo {
@@ -667,6 +665,75 @@ header .container__header .header__logo img {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+}
+
+.container__projects {
+  padding: 0 16px;
+}
+
+.container__projects .description__projects {
+  margin: 30px 0;
+}
+
+.container__projects .description__projects .title__projects {
+  font-size: 24px;
+}
+
+.container__projects .description__projects .paragraph__projects {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.container__projects .description__projects .btn__pro {
+  background-color: #4caf50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.items__projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.items__projects .items img {
+  padding: 12px 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .items__projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .items__projects .items {
+    width: 49%;
+    display: block;
+  }
+  .items__projects .items img {
+    max-width: 100%;
+    margin: 0 12px;
+    display: block;
+  }
+}
+
+.container__projects {
+  padding: 0 32px;
 }
 
 footer {
