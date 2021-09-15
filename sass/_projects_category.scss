@@ -1,0 +1,11 @@
+.category {
+  padding: 0 10px;
+  .category__items {
+    background: rgb(93, 109, 93);
+    .category__images {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
