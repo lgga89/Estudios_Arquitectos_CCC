@@ -39,9 +39,23 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .contact {
+    margin-top: 400px;
+  }
+}
+
 @media (min-width: 876px) {
+  .contact {
+    margin-top: 320px;
+  }
   .contact__ico {
     flex: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .contact {
+    margin-top: 10px;
   }
 }
 
