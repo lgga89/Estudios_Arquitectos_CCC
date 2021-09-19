@@ -1,6 +1,7 @@
 .projects {
   text-align: justify;
   font-family: "Montserrat";
+
   .cover__project {
     img {
       width: 100%;
@@ -29,7 +30,7 @@
             background-color: #4caf50;
             border: none;
             color: white;
-            margin-top: 20px;
+            margin: 20px 0;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
@@ -42,83 +43,68 @@
       }
     }
   }
-
-  /*--------------------------------------------------------------*/
-  @media (min-width: 480px) {
-    .projects {
-      padding: 0 0 70px;
-      .cover__project {
-        .projects__container {
-          .projects__title {
-            font-size: 30px;
-          }
-          .projects__paragraph {
-            font-size: 16px;
-            color: red;
-          }
+}
+/*--------------------------------------------------------------*/
+@media (min-width: 480px) {
+  .projects {
+    .cover__project {
+      .projects__container {
+        .projects__title {
+          font-size: 30px;
+        }
+        .projects__paragraph {
+          font-size: 16px;
         }
       }
     }
   }
+}
 
-  // corregir 480px
-
-  @media (min-width: 768px) {
-    .projects {
-      padding: 0 0 32px;
-      .projects__title {
-        text-align: left;
-      }
-      .cover__project {
-        position: relative;
-        min-width: 500px;
-      }
-
+@media (min-width: 768px) {
+  .projects {
+    .cover__project {
+      position: relative;
+      min-width: 500px;
       .projects__container {
         position: absolute;
-        top: 300px;
+        top: 10px;
         right: 0;
         left: 0;
         bottom: 0;
         border-radius: 20px;
         margin: 0 auto;
         width: 90%;
-        height: 400px;
+        height: 320px;
         background: #fff;
-        padding: 40px 32px;
+        padding: 20px 32px 20px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        .btn {
-          .projects__btn {
-            background-color: #4caf50; /* Green */
-            border: none;
-            color: white;
-            margin-top: 40px;
-            padding: 10px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-          }
+        .projects__title {
+          text-align: left;
         }
 
-        .projects__btn:hover {
-          background-color: #106610;
+        .hand {
+          .btn {
+            .projects__btn {
+              background-color: #4caf50;
+              border: none;
+              color: white;
+              margin-top: 40px;
+              padding: 10px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+            }
+          }
         }
       }
     }
   }
+}
 
-  @media (min-width: 1024px) {
-    .projects {
-      padding: 0 0 32px;
-
-      .projects__title {
-        text-align: left;
-      }
-
-      .cover__project {
-        position: relative;
-      }
-
+@media (min-width: 1024px) {
+  .projects {
+    .cover__project {
+      position: relative;
       .projects__container {
         position: absolute;
         top: 50px;
@@ -130,8 +116,11 @@
         width: 30%;
         height: 400px;
         background: #fff;
-        padding: 40px 32px;
+
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .projects__title {
+          text-align: left;
+        }
         .hand {
           .btn {
             text-align: center;
@@ -143,11 +132,25 @@
       }
     }
   }
-  @media (min-width: 1200px) {
-    .projects {
-      .cover__project {
-        position: relative;
+}
+@media (min-width: 1137px) {
+  .projects {
+    .cover__project {
+      .projects__container {
+        .hand {
+          .btn {
+            margin-top: 30px;
+            text-align: center;
+          }
+        }
       }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .projects {
+    .cover__project {
+      position: relative;
 
       .projects__container {
         position: absolute;
@@ -165,12 +168,12 @@
       }
     }
   }
+}
 
-  @media (min-width: 1300px) {
-    .projects {
-      .cover__project {
-        position: relative;
-      }
+@media (min-width: 1300px) {
+  .projects {
+    .cover__project {
+      position: relative;
 
       .projects__container {
         position: absolute;
@@ -181,21 +184,10 @@
         border-radius: 10px;
         margin: 0 auto;
         width: 30%;
-        height: 400px;
+        height: 350px;
         background: #fff;
         padding: 40px 32px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      }
-    }
-  }
-
-  @media (min-width: 1137px) {
-    .projects__container {
-      .hand {
-        .btn {
-          margin-top: 30px;
-          text-align: center;
-        }
       }
     }
   }
