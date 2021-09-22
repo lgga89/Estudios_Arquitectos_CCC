@@ -1,0 +1,27 @@
+.project__container_one {
+  padding: 0 10px;
+  line-height: 2;
+  .project__one {
+    padding: 0 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project__container_one {
+    display: flex;
+    .project__one {
+      width: 50%;
+    }
+    .container__carousel {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .project__container_one {
+    .project__one {
+      line-height: 3;
+    }
+  }
+}
