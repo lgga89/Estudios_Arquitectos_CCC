@@ -266,16 +266,16 @@ main .information .description p {
 .projects .cover__project .projects__container .projects__paragraph {
   line-height: 2;
 }
-.projects .cover__project .projects__container .hand {
+.projects .cover__project .projects__container .hand .container__hand {
   line-height: 2;
   display: flex;
   flex-direction: column;
 }
-.projects .cover__project .projects__container .hand .hand_btn {
+.projects .cover__project .projects__container .hand .container__hand .hand_btn {
   text-decoration: none;
   color: #7a7a7a;
 }
-.projects .cover__project .projects__container .hand .btn .projects__btn {
+.projects .cover__project .projects__container .btn .projects__btn {
   text-align: center;
   background-color: #4caf50;
   border: none;
@@ -306,14 +306,14 @@ main .information .description p {
   }
   .projects .cover__project .projects__container {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 0;
     left: 0;
     bottom: 0;
     border-radius: 20px;
     margin: 0 auto;
     width: 90%;
-    height: 320px;
+    height: 340px;
     background: #fff;
     padding: 20px 32px 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -321,11 +321,13 @@ main .information .description p {
   .projects .cover__project .projects__container .projects__title {
     text-align: left;
   }
+  .projects .cover__project .projects__container .hand .btn {
+    margin-top: 10px;
+  }
   .projects .cover__project .projects__container .hand .btn .projects__btn {
     background-color: #4caf50;
     border: none;
     color: white;
-    margin-top: 40px;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -338,14 +340,14 @@ main .information .description p {
   }
   .projects .cover__project .projects__container {
     position: absolute;
-    top: 50px;
+    top: 20px;
     right: 0;
     left: 600px;
     bottom: 0;
     border-radius: 10px;
     margin: 0 auto;
     width: 30%;
-    height: 400px;
+    height: 420px;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -390,14 +392,14 @@ main .information .description p {
   }
   .projects .cover__project .projects__container {
     position: absolute;
-    top: 130px;
+    top: 60px;
     right: 0;
     left: 790px;
     bottom: 0;
     border-radius: 10px;
     margin: 0 auto;
     width: 30%;
-    height: 350px;
+    height: 400px;
     background: #fff;
     padding: 40px 32px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -662,20 +664,23 @@ main .information .description p {
   border-radius: 20px;
 }
 
-.container__projects .categorias {
+.container__header {
+  margin: 10px;
+}
+.container__header .categorias {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
-.container__projects .categorias a {
+.container__header .categorias a {
   color: #9b9b9b;
   margin: 10px 20px;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
 }
-.container__projects .categorias a.activo {
+.container__header .categorias a.activo {
   color: #000;
 }
 
@@ -701,12 +706,71 @@ main .information .description p {
 }
 .grid .item .item-contenido {
   position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
 }
 .grid .item .item-contenido img {
   width: 100%;
+  height: 250px;
   cursor: pointer;
   vertical-align: top;
-  border-radius: 10%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+.grid .item .item-contenido .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 103, 123, 0.7);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  color: white;
+}
+.grid .item .item-contenido .capa h3 {
+  color: #fff;
+  font-weight: 400;
+  transition: all 400ms ease-out;
+  margin-top: 50px;
+}
+.grid .item .item-contenido .capa p {
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+.grid .item .item-contenido .capa a {
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.grid .item .item-contenido:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.grid .item .item-contenido:hover > .capa .capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+  margin-top: 30px;
+}
+
+.grid .item .item-contenido:hover > img {
+  transform: scale(1.3);
 }
 
 /* ------------------------- */
@@ -958,21 +1022,21 @@ main .information .description p {
   box-sizing: border-box;
   white-space: normal;
 }
-.carousel__slide figure {
+.carousel__slide .carousel__figure {
   display: flex;
   margin: 0;
 }
-.carousel__slide div {
+.carousel__slide .carousel__figure .carousel__img {
   position: relative;
   width: 100%;
 }
-.carousel__slide div:before {
+.carousel__slide .carousel__figure .carousel__img:before {
   display: block;
   content: "";
   width: 100%;
   padding-top: 66.6666666667%;
 }
-.carousel__slide div > img {
+.carousel__slide .carousel__figure .carousel__img > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -981,7 +1045,7 @@ main .information .description p {
   width: 100%;
   height: 100%;
 }
-.carousel__slide img {
+.carousel__slide .carousel__figure .carousel__img img {
   display: block;
   flex: 1 1 auto;
   -o-object-fit: cover;
@@ -1050,9 +1114,6 @@ main .information .description p {
 .project__container_one {
   padding: 0 10px;
   line-height: 2;
-}
-.project__container_one .project__one {
-  padding: 0 5px;
 }
 
 @media (min-width: 768px) {

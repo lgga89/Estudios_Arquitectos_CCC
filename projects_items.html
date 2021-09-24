@@ -24,19 +24,33 @@
             <div class=" header__logo">
                 <a href="index.html"><img src="images/01.png" alt=""></a>
             </div>
-
+            <div class="menu__hamburger ">
+                <input type="checkbox" id="menu-bar">
+                <label class="hamburger__container" for="menu-bar">
+                    <div id="hamburger__wrapper" class="">
+                        <p class="burger"></p>
+                    </div>
+                </label>
+                <nav class="menu__dropdown">
+                    <div class="menu_items">
+                        <a class="items" href="#sobreNosotros">Sobre Nosotros</a>
+                        <a class="items" href="#servicios">Servicios</a>
+                        <a class="items" href="#Portafolio">Portafolio</a>
+                        <a class="items" href="#Contacto">Contacto</a>
+                    </div>
+                </nav>
+            </div>
             <nav class="menu">
-                <ul class="menu__container">
-                    <li><a id="menu__items" href="#sobreNosotros">Sobre Nosotros</a></li>
-                    <li><a id="menu__items" href="#Services">Servicios</a></li>
-                    <li><a id="menu__items" href="#Projects">Proyectos</a></li>
-                    <li><a id="menu__items" href="#Contacto">Contacto</a></li>
-                </ul>
+                <div class="categorias" id="categorias">
+                    <a href="#" class="activo">Todos</a>
+                    <a href="#">Exterior</a>
+                    <a href="#">Interior</a>
+                    <a href="#">Render</a>
+                    <a href="#">Moderno</a>
+                </div>
             </nav>
         </div>
-
     </header>
-
 
 
     <main class="container__projects">
@@ -47,73 +61,110 @@
                 estética y funcionalidad del proyecto con la finalidad de mejorar la experiencia de cada cliente.</p>
             <a class="btn__pro" target="_blank" href="index.html">Volver</a>
         </div>
-        <div class="categorias" id="categorias">
-            <a href="#" class="activo">Todos</a>
-            <a href="#">Exterior</a>
-            <a href="#">Interior</a>
-            <a href="#">Render</a>
-            <a href="#">Moderno</a>
-        </div>
 
 
 
         <section class="grid" id="grid">
-            <div class="item" data-categoria="exterior" data-descripcion="1.- Lorem ipsum dolor sit amet consectetur.">
+
+            <div class="item" data-categoria="exterior">
                 <div class="item-contenido">
                     <img src="images/projects/exteriores01.jpg" alt="">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                        <a href="projects_uno.html">Ver Proyecto</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="item" data-categoria="interior" data-etiquetas="personas mujeres"
-                data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+            <div class="item" data-categoria="interior">
                 <div class="item-contenido">
                     <img src="images/projects/Interiores01.jpg" alt="">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                        <a href="projects_uno.html">Ver Proyecto</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="item" data-categoria="render" data-descripcion="3.- Lorem ipsum dolor sit amet consectetur.">
+            <div class="item" data-categoria="render">
                 <div class="item-contenido">
                     <img src="images/projects/render01.jpg" alt="">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                        <a href="projects_uno.html">Ver Proyecto</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="item" data-categoria="interior" data-descripcion="4.- Lorem ipsum dolor sit amet consectetur.">
+            <div class="item" data-categoria="interior">
                 <div class="item-contenido">
                     <img src="images/projects/Interiores02.jpg" alt="">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                        <a href="projects_uno.html">Ver Proyecto</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="item" data-categoria="render" data-descripcion="5.- Lorem ipsum dolor sit amet consectetur.">
+            <div class="item" data-categoria="render">
                 <div class="item-contenido">
                     <img src="images/projects/render02.jpg" alt="">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                        <a href="projects_uno.html">Ver Proyecto</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="item" data-categoria="interior" data-etiquetas="personas mujeres"
-                data-descripcion="6.- Lorem ipsum dolor sit amet consectetur.">
+            <div class="item" data-categoria="interior">
                 <div class="item-contenido">
                     <img src="images/projects/Interiores03.jpg" alt="">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                        <a href="projects_uno.html">Ver Proyecto</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="item" data-categoria="render" data-descripcion="7.- Lorem ipsum dolor sit amet consectetur.">
+            <div class="item" data-categoria="render">
                 <div class="item-contenido">
                     <img src="images/projects/render03.jpg" alt="">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                        <a href="projects_uno.html">Ver Proyecto</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="item" data-categoria="exterior" data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+            <div class="item" data-categoria="exterior">
                 <div class="item-contenido">
                     <img src="images/projects/exteriores02.jpg" alt="">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                        <a href="projects_uno.html">Ver Proyecto</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="item" data-categoria="exterior" data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
-				 	">
+            <div class="item" data-categoria="exterior">
                 <div class="item-contenido">
                     <img src="images/projects/exteriores03.jpg" alt="">
+                    <div class="capa">
+                        <h3>SLee Dw</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                        <a href="projects_uno.html">Ver Proyecto</a>
+                    </div>
                 </div>
             </div>
+
         </section>
 
 
@@ -155,7 +206,7 @@
             wrapper.classList.toggle("open")
         })</script>
 
-    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <!--<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>-->
     <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
     <script src="js/main.js"></script>
 </body>

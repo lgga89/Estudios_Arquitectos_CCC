@@ -17,28 +17,30 @@
       }
 
       .hand {
-        line-height: 2;
-        display: flex;
-        flex-direction: column;
-        .hand_btn {
-          text-decoration: none;
-          color: #7a7a7a;
-        }
-        .btn {
-          .projects__btn {
-            text-align: center;
-            background-color: #4caf50;
-            border: none;
-            color: white;
-            margin: 20px 0;
-            padding: 15px 32px;
-            text-align: center;
+        .container__hand {
+          line-height: 2;
+          display: flex;
+          flex-direction: column;
+          .hand_btn {
             text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 20px;
-            max-width: 236px;
+            color: #7a7a7a;
           }
+        }
+      }
+      .btn {
+        .projects__btn {
+          text-align: center;
+          background-color: #4caf50;
+          border: none;
+          color: white;
+          margin: 20px 0;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border-radius: 20px;
+          max-width: 236px;
         }
       }
     }
@@ -67,14 +69,14 @@
       min-width: 500px;
       .projects__container {
         position: absolute;
-        top: 10px;
+        top: 0px;
         right: 0;
         left: 0;
         bottom: 0;
         border-radius: 20px;
         margin: 0 auto;
         width: 90%;
-        height: 320px;
+        height: 340px;
         background: #fff;
         padding: 20px 32px 20px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -84,11 +86,11 @@
 
         .hand {
           .btn {
+            margin-top: 10px;
             .projects__btn {
               background-color: #4caf50;
               border: none;
               color: white;
-              margin-top: 40px;
               padding: 10px 32px;
               text-align: center;
               text-decoration: none;
@@ -107,14 +109,14 @@
       position: relative;
       .projects__container {
         position: absolute;
-        top: 50px;
+        top: 20px;
         right: 0;
         left: 600px;
         bottom: 0;
         border-radius: 10px;
         margin: 0 auto;
         width: 30%;
-        height: 400px;
+        height: 420px;
         background: #fff;
 
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -177,14 +179,14 @@
 
       .projects__container {
         position: absolute;
-        top: 130px;
+        top: 60px;
         right: 0;
         left: 790px;
         bottom: 0;
         border-radius: 10px;
         margin: 0 auto;
         width: 30%;
-        height: 350px;
+        height: 400px;
         background: #fff;
         padding: 40px 32px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

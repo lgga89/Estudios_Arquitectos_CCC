@@ -117,20 +117,18 @@
   box-sizing: border-box;
   white-space: normal;
 
-  figure {
+  .carousel__figure {
     display: flex;
     margin: 0;
-  }
-
-  div {
-    @include aspect-ratio(3, 2);
-    width: 100%;
-  }
-
-  img {
-    display: block;
-    flex: 1 1 auto;
-    object-fit: cover;
+    .carousel__img {
+      @include aspect-ratio(3, 2);
+      width: 100%;
+      img {
+        display: block;
+        flex: 1 1 auto;
+        object-fit: cover;
+      }
+    }
   }
 
   .credit {
